@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>@penoestribo-br</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open Sans"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/0c1ffb9de5.js"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      body {
+        font-family: "Open Sans";
+        color: #ffffff;
+        margin: 0;
+        padding: 0;
+        background-color: #1a1a1a;
+        text-align: center;
+      }
+
+      .video-container {
+        max-width: 100%;
+        overflow: hidden;
+        margin-top: 20px;
+      }
+
+      .yt-frame {
+        border: 0;
+      }
+      @media (max-width: 600px) {
+            /* Adjust the width for screens with a maximum width of 600px (mobile) */
+            .yt-frame {
+                border: 0;
+                width: 95%;
+                height: 200px;
+            }
+        }
+
+      #logo {
+        width: 80%; /* Adjust the width as needed */
+        height: auto; /* Maintain aspect ratio */
+        margin-bottom: 10px;
+      }
+
+      #avatar {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        margin-bottom: 20px;
+      }
+
+      .social-button {
+        display: inline-block;
+        padding: 10px 35px;
+        font-size: 16px;
+        text-decoration: none;
+        color: #ffffff;
+        border-radius: 5px;
+        transition: background-color 0.3s;
+        position: relative;
+        overflow: hidden;
+      }
+
+      .social-button i {
+        position: absolute;
+        left: 10px;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+
+      #youtubeButton {
+        background-color: #ff0000;
+      }
+
+      #instagramButton {
+        background-color: #405de6;
+      }
+
+      .social-button:hover {
+        filter: brightness(90%);
+      }
+    </style>
+  </head>
+  <body>
+    <img src="logo.png" id="logo" alt="Logo" />
+    <p></p>
+    <img src="avatar.jpg" alt="Avatar" id="avatar" />
+    <p></p>
+    <a
+      href="https://www.youtube.com/"
+      target="_blank"
+      class="social-button"
+      id="youtubeButton"
+    >
+      <i class="fa-brands fa-youtube"></i>YouTube
+    </a>
+    <a
+      href="https://www.instagram.com/your_username/"
+      target="_blank"
+      class="social-button"
+      id="instagramButton"
+    >
+      <i class="fa-brands fa-instagram"></i>Instagram
+    </a>
+    <p>Últimos vídeos</p>
+    <div class="video-container">
+      <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/UQSRK0U8NHw?si=iPD7Kjh55aRNOroJ"
+        title="YouTube video player"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen
+        class="yt-frame"
+      ></iframe>
+    </div>
+  <p></p>
+  </body>
+</html>
